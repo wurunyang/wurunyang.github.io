@@ -151,6 +151,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-计算机网络学习笔记（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">计算机网络学习笔记（二）</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2019-11-17T11:53:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <br>
+
+<h2 id="第三章-nbsp-nbsp-数据链路层"><a href="#第三章-nbsp-nbsp-数据链路层" class="headerlink" title="第三章&nbsp;&nbsp;数据链路层"></a>第三章&nbsp;&nbsp;数据链路层<br></h2><p>1.数据链路层使用的信道分为<font color="#0088FF">点对点</font>信道和<font color="#0088FF">广播信道</font>两种类型。<br>2.链路（Link）是一条无源的点到点物理线路段，中间没有任何其他的交换结点。<font color="#0088FF">数据链路（data link）</font>除了物理线路外，还必须有通信协议来控制这些数据的传输。若把实现这些协议的硬件和软件加到链路上，就构成了数据链路。一般使用<font color="#0088FF">适配器（网卡）</font>来实现协议的硬件和软件。<br>3.数据链路层传送的协议数据单元是<font color="#0088FF">帧</font>，数据链路层的三个基本问题是：<font color="#0088FF">封装成帧，</font><font color="#0088FF">透明传输，</font><font color="#0088FF">差错控制</font>。<br>4.封装成帧：在IP数据报前后增加首部和尾部，构成帧。使用帧定界符进行帧定界，使用控制字符SOH表示帧头部的开始，使用控制字符EOT表示帧的结束。<br>5.透明传输：使用字节填充或者字符填充解决透明传输的问题，如果数据中出现控制字符SOH、EOT或者ESC，就在它们前面加上转义字符ESC，接收端的数据链路层在将数据发给网络层之前删除插入的转义字符。</p>
+        
+          <a class="article-more-a" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">计算机网络</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-计算机网络学习笔记(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -173,7 +251,7 @@
       
         <br>
 
-<h2 id="第一章-nbsp-nbsp-计算机网络概述"><a href="#第一章-nbsp-nbsp-计算机网络概述" class="headerlink" title="第一章&nbsp;&nbsp;计算机网络概述"></a>第一章&nbsp;&nbsp;计算机网络概述<br></h2><p>1.互联网（Internet）是由数量极大的各种类型的计算机网络连接起来形成的网络。<br>2.互联网的两个重要特点：连通性和共享。<br>3.概念辨析<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.<font color = #0088FF>互联网</font>：特指Internet，又叫因特网，是世界上最大、开放的、由众多网络连接而成的特定的计算机网络，采用TCP/IP协议族作为通信的规则。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.计算机网络：由若干<font color = #0088FF>结点（node）</font>和连接这些结点的<font color = #0088FF>链路（link）</font>组成<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.互连网：internet是一个通用名词，泛指由多个计算机网络互联而成的网络。网络的网络。<br>4.互联网的组成：<font color = #0088FF>边缘部分</font>和<font color = #0088FF>核心部分</font>。边缘部分是指所有连接在互联网上的主机，也被称为端系统；
+<h2 id="第一章-nbsp-nbsp-计算机网络概述"><a href="#第一章-nbsp-nbsp-计算机网络概述" class="headerlink" title="第一章&nbsp;&nbsp;计算机网络概述"></a>第一章&nbsp;&nbsp;计算机网络概述<br></h2><p>1.互联网（Internet）是由数量极大的各种类型的计算机网络连接起来形成的网络。<br>2.互联网的两个重要特点：连通性和共享。<br>3.概念辨析<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.<font color="#0088FF">互联网</font>：特指Internet，又叫因特网，是世界上最大、开放的、由众多网络连接而成的特定的计算机网络，采用TCP/IP协议族作为通信的规则。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.计算机网络：由若干<font color="#0088FF">结点（node）</font>和连接这些结点的<font color="#0088FF">链路（link）</font>组成<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.互连网：internet是一个通用名词，泛指由多个计算机网络互联而成的网络。网络的网络。<br>4.互联网的组成：<font color="#0088FF">边缘部分</font>和<font color="#0088FF">核心部分</font>。边缘部分是指所有连接在互联网上的主机，也被称为端系统；</p>
         
           <a class="article-more-a" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/#more">more >></a>
         
