@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>计算机网络学习笔记（三） | 吴润洋的个人博客</title>
+  <title>计算机网络学习笔记（四） | 吴润洋的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第四章&amp;nbsp;&amp;nbsp;网络层1.网络层向上层只提供简单灵活的、无连接的、尽最大努力交付的数据报业务。网络层不提供服务质量的保证，发送的分组可能出错、重复、丢失、失序，当然也不保证分组传送的时限。主机中的运输层负责可靠交付。2.这种方式的优点：网络造价大大降低，运行方式灵活，适应各种应用。3.网络互连都是指通过路由器进行网络互连和路由选择。4.使用IP协议的虚拟互连网络简称IP网，使用I">
+  <meta name="description" content="第五章&amp;nbsp;&amp;nbsp;运输层5.1&amp;nbsp;运输层概述1.运输层提供应用进程间的逻辑通信。在运输层看来，通信的端点是应用进程。运输层的一个重要功能是分用和复用。运输层有两个重要的协议：面向连接的TCP和无连接的UDP。运输层向高层用户屏蔽了下面网络的细节，使高层用户看起来就好像在两个运输层实体之间存在一条端到端的逻辑通信信道。2.网络层提供主机之间的逻辑通信；运输层提供应用进程之间的">
 <meta name="keywords" content="计算机网络">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机网络学习笔记（三）">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;18&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89&#x2F;index.html">
+<meta property="og:title" content="计算机网络学习笔记（四）">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;20&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89&#x2F;index.html">
 <meta property="og:site_name" content="吴润洋的个人博客">
-<meta property="og:description" content="第四章&amp;nbsp;&amp;nbsp;网络层1.网络层向上层只提供简单灵活的、无连接的、尽最大努力交付的数据报业务。网络层不提供服务质量的保证，发送的分组可能出错、重复、丢失、失序，当然也不保证分组传送的时限。主机中的运输层负责可靠交付。2.这种方式的优点：网络造价大大降低，运行方式灵活，适应各种应用。3.网络互连都是指通过路由器进行网络互连和路由选择。4.使用IP协议的虚拟互连网络简称IP网，使用I">
+<meta property="og:description" content="第五章&amp;nbsp;&amp;nbsp;运输层5.1&amp;nbsp;运输层概述1.运输层提供应用进程间的逻辑通信。在运输层看来，通信的端点是应用进程。运输层的一个重要功能是分用和复用。运输层有两个重要的协议：面向连接的TCP和无连接的UDP。运输层向高层用户屏蔽了下面网络的细节，使高层用户看起来就好像在两个运输层实体之间存在一条端到端的逻辑通信信道。2.网络层提供主机之间的逻辑通信；运输层提供应用进程之间的">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;18&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89&#x2F;%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E7%BB%93%E6%9E%84.png">
-<meta property="og:updated_time" content="2019-11-20T04:31:31.234Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;20&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89&#x2F;%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;20&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89&#x2F;%E5%9B%9B%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png">
+<meta property="og:updated_time" content="2019-11-20T07:06:21.607Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;18&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89&#x2F;%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E7%BB%93%E6%9E%84.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;20&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89&#x2F;%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png">
   
     <link rel="alternative" href="/atom.xml" title="吴润洋的个人博客" type="application/atom+xml">
   
@@ -155,20 +156,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-计算机网络学习笔记（三）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-计算机网络学习笔记（四）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      计算机网络学习笔记（三）
+      计算机网络学习笔记（四）
     </h1>
   
 
         
-        <a href="/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2019-11-18T11:10:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-18</time>
+        <a href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2019-11-20T04:32:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-20</time>
 </a>
         
       </header>
@@ -177,44 +178,10 @@
       
         <br>
 
-<h2 id="第四章-nbsp-nbsp-网络层"><a href="#第四章-nbsp-nbsp-网络层" class="headerlink" title="第四章&nbsp;&nbsp;网络层"></a>第四章&nbsp;&nbsp;网络层<br></h2><p>1.网络层向上层只提供简单灵活的、<font color="#0088FF">无连接的、</font><font color="#0088FF">尽最大努力交付的</font>数据报业务。网络层不提供服务质量的保证，发送的分组可能出错、重复、丢失、失序，当然也不保证分组传送的时限。主机中的<font color="#0088FF">运输层</font>负责可靠交付。<br>2.这种方式的优点：网络造价大大降低，运行方式灵活，适应各种应用。<br>3.网络互连都是指通过路由器进行网络互连和路由选择。<br>4.使用IP协议的虚拟互连网络简称IP网，使用IP协议可以使这些性能各异的网络在用户看来就像是一个统一的网络。当互联网上的主机通信时，就好像在一个网络上通信一样，而看不到互连网络的异构细节。<br>5.互联网上的交付有两种：在本网络的直接交付和到其他网络的间接交付。<br>6.IP地址（32位）的编址方法：分类的IP地址（最基本的方法）、划分子网（改进）、构成超网（无分类编址方法）。<a id="more"></a><br>7.每一类IP地址都包含两个长度固定的字段，第一个字段是<font color="#0088FF">网络号</font>，标志主机连接到的网络；第二个字段是<font color="#0088FF">主机号</font>，标志该主机；IP地址在互联网范围内是唯一的。<br>8.A类地址的网络号字段为1个字节，第一位为0；B类地址的网络号字段为2个字节，前两位为10；C类地址的网络号字段为3个字节；前三位为110；D类地址为多播地址，E类地址保留以后使用。<br>9.IP地址是一种分等级的地址结构，分等级的好处是1）IP地址的管理机构只用分配网络号，主机号由分配了IP地址的单位自行分配，方便了IP地址的管理。2）路由器在转发分组时只根据目的主机所连接的网络号进行转发，减少了路由表中的项目，减少了路由表占据的存储空间。<br>10.IP地址标志着一个主机和一条链路的接口，一台主机同时位于两个网络中时，就有两个IP地址，具有不同的网络号；路由器有至少两个IP地址。<br>11.所有分配网络号的网络，无论大小，都是平等的。<br>12.特殊的IP地址</p>
-<table>
-<thead>
-<tr>
-<th align="center">网络号</th>
-<th align="center">主机号</th>
-<th align="center">用途</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">全0</td>
-<td align="center">全0</td>
-<td align="center">本网络的本主机</td>
-</tr>
-<tr>
-<td align="center">全0</td>
-<td align="center">主机号</td>
-<td align="center">本网络的某主机</td>
-</tr>
-<tr>
-<td align="center">全1</td>
-<td align="center">全1</td>
-<td align="center">本网络广播</td>
-</tr>
-<tr>
-<td align="center">网络号</td>
-<td align="center">全1</td>
-<td align="center">某网络广播</td>
-</tr>
-<tr>
-<td align="center">127</td>
-<td align="center"></td>
-<td align="center">回环检测</td>
-</tr>
-</tbody></table>
-<p>13.物理地址是数据链路层和物理层使用的，IP地址是网络层及以上使用的，数据链路层看不到数据报的IP地址。<br>14.地址解析协议ARP完成从IP地址到物理地址的映射，解决同一个局域网中主机或路由器的IP地址和物理地址的映射问题。ARP高速缓存大大减少了网络上的通信量。<br>15.在IP地址中增加了一个子网字段，从两级的IP地址变成了三级的IP地址。从主机号中借用了几位作为子网号。划分子网完全是单位内部的事情，对外部网络透明，对外部网络仍然表现为没有划分子网的网络。使用子网掩码可以找出IP地址中的子网部分。<br>16.无分类域间路由选择CIDR是一种无分类编址方法，使用网络前缀和主机号的两级编址结构。CIDR使用斜线记法，在IP地址后面增加一个斜线，斜线的后面写上网络前缀的长度。<br>17.路由聚合又叫构成超网，有利于减少路由表中的项目，减少路由器之间路由选择信息的交换，提高整个互联网的性能。<br>18.网际控制报文协议ICMP允许主机或路由器报告差错情况和提供异常情况的报告，工作在网络层（IP层）。ICMP报文作为IP数据报的数据。ICMP报文分为两种类型，分为ICMP差错报告报文和ICMP询问报文。ICMP的一个重要应用是使用PING来测试两台主机之间的连通性。使用了ICMP回送请求和回答报文。<br>19.自治系统AS是在单一技术管理下的一组路由器，重要的是一个AS对其他AS表现出的是一个单一的一致的路由选择策略。<br>20.互联网有两大类路由选择协议：内部网关协议IGP，如RIP、OSPF，外部网关协议EGP，如BGP-4。<br>21.路由信息协议RIP是分布式的、基于距离向量的路由选择协议，适用于小型互联网。距离指的是路由器的数目。RIP不能在两个网络之间同时使用多条路由。<br>22.路由器的结构<br> <div align="center"><img src="/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E7%BB%93%E6%9E%84.png" class title="路由器的结构示意图"></div><br>路由器的结构分为两大部分：路由选择部分和分组转发部分。路由选择部分的核心构件是路由选择处理机，根据路由选择协议生成路由表，经常或定时和相邻路由器交换路由信息，更新和维护路由表。分组转发部分包括三个部分：交换结构、输入端口和输出端口。交换结构根据路由表对分组进行处理。输入端口的查找和转发功能是路由器的交换功能中最重要的。路由器的输入和输出队列产生溢出是分组丢失的重要原因。</p>
-<hr>
-<p><font color="blueviolet">感谢阅读 (ฅ´ω`ฅ)</font><br> <font color="blueviolet">ε=ε=ε=ε=ε=ε=┌(;￣◇￣)┘</font></p>
+<h2 id="第五章-nbsp-nbsp-运输层"><a href="#第五章-nbsp-nbsp-运输层" class="headerlink" title="第五章&nbsp;&nbsp;运输层"></a>第五章&nbsp;&nbsp;运输层</h2><h3 id="5-1-nbsp-运输层概述"><a href="#5-1-nbsp-运输层概述" class="headerlink" title="5.1&nbsp;运输层概述"></a>5.1&nbsp;运输层概述</h3><p>1.运输层提供应用进程间的<font color="#0088FF">逻辑通信</font>。在运输层看来，通信的端点是应用进程。运输层的一个重要功能是分用和复用。运输层有两个重要的协议：<font color="#0088FF">面向连接的TCP</font>和<font color="#0088FF">无连接的UDP</font>。运输层向高层用户屏蔽了下面网络的细节，使高层用户看起来就好像在两个运输层实体之间存在一条端到端的逻辑通信信道。<br>2.网络层提供主机之间的逻辑通信；运输层提供应用进程之间的逻辑通信。<br>3.用户数据报协议UDP和传输控制协议TCP：UDP是一种无连接的协议，提供无连接的服务，在发传送数据前不需要建立连接，传送的数据单位协议是UDP报文或用户数据报；对方的运输层收到用户数据报后不需要给出任何确认，尽管UDP协议不提供可靠传输，在某些情况下UDP是最有效的工作方式。TCP是面向连接的协议，提供面向连接的服务，传送的数据单位协议是TCP报文段，TCP不提供广播和多播，因为TCP提供面向连接的、可靠的运输协议，不可避免地增加了开销。<a id="more"></a><br>4.端口是应用层的各种协议进程与运输实体进行层间交互的地址。端口用16位的端口号进行标志，端口号标志本计算机应用层的进程。</p>
+<h3 id="5-2-nbsp-UDP协议"><a href="#5-2-nbsp-UDP协议" class="headerlink" title="5.2&nbsp;UDP协议"></a>5.2&nbsp;UDP协议</h3><p>1.UDP的特点：1）UDP是无连接的，在传送数据之前不需要先建立连接。2）UDP是尽最大努力的交付，不是可靠交付。3）UDP是面向报文的，UDP在收到应用层的报文后，不拆分也不合并，UDP一次交付一个完整的报文。4）UDP没有拥塞控制。5）UDP支持一对一，一对多，多对一，多对多的交互通信。6）UDP的首部很短，只有8个字节。</p>
+<h3 id="5-3-nbsp-TCP协议"><a href="#5-3-nbsp-TCP协议" class="headerlink" title="5.3&nbsp;TCP协议"></a>5.3&nbsp;TCP协议</h3><p>1.TCP协议的特点：1）TCP是面向连接的。2）每一条TCP连接只能有两个端点，TCP连接只能是一对一的。3）TCP提供可靠交付。4）TCP提供全双工通信。5）TCP是面向字节流的。</p>
+<h3 id="5-9-nbsp-TCP的运输连接管理"><a href="#5-9-nbsp-TCP的运输连接管理" class="headerlink" title="5.9&nbsp;TCP的运输连接管理"></a>5.9&nbsp;TCP的运输连接管理</h3><p>1.运输连接有三个阶段：连接建立、数据传送、连接释放。<br>2.TCP连接的建立过程：三报文握手。<br> <div align="center"><img src="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png" class title="三报文握手示意图"></div><br>3.TCP连接的释放过程是四报文握手。<br> <div align="center"><img src="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/%E5%9B%9B%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png" class title="四报文握手示意图"></div></p>
 
       
 
@@ -305,7 +272,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -319,18 +286,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          计算机网络学习笔记（四）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">计算机网络学习笔记（二）</div>
+    <a href="/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">计算机网络学习笔记（三）</div>
       <i class="icon-circle-right"></i>
     </a>
   
