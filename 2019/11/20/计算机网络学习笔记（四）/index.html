@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;20&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89&#x2F;%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;20&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89&#x2F;%E5%9B%9B%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png">
-<meta property="og:updated_time" content="2019-11-20T07:06:21.607Z">
+<meta property="og:updated_time" content="2019-11-20T07:13:59.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;20&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89&#x2F;%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png">
   
@@ -181,7 +181,9 @@
 <h2 id="第五章-nbsp-nbsp-运输层"><a href="#第五章-nbsp-nbsp-运输层" class="headerlink" title="第五章&nbsp;&nbsp;运输层"></a>第五章&nbsp;&nbsp;运输层</h2><h3 id="5-1-nbsp-运输层概述"><a href="#5-1-nbsp-运输层概述" class="headerlink" title="5.1&nbsp;运输层概述"></a>5.1&nbsp;运输层概述</h3><p>1.运输层提供应用进程间的<font color="#0088FF">逻辑通信</font>。在运输层看来，通信的端点是应用进程。运输层的一个重要功能是分用和复用。运输层有两个重要的协议：<font color="#0088FF">面向连接的TCP</font>和<font color="#0088FF">无连接的UDP</font>。运输层向高层用户屏蔽了下面网络的细节，使高层用户看起来就好像在两个运输层实体之间存在一条端到端的逻辑通信信道。<br>2.网络层提供主机之间的逻辑通信；运输层提供应用进程之间的逻辑通信。<br>3.用户数据报协议UDP和传输控制协议TCP：UDP是一种无连接的协议，提供无连接的服务，在发传送数据前不需要建立连接，传送的数据单位协议是UDP报文或用户数据报；对方的运输层收到用户数据报后不需要给出任何确认，尽管UDP协议不提供可靠传输，在某些情况下UDP是最有效的工作方式。TCP是面向连接的协议，提供面向连接的服务，传送的数据单位协议是TCP报文段，TCP不提供广播和多播，因为TCP提供面向连接的、可靠的运输协议，不可避免地增加了开销。<a id="more"></a><br>4.端口是应用层的各种协议进程与运输实体进行层间交互的地址。端口用16位的端口号进行标志，端口号标志本计算机应用层的进程。</p>
 <h3 id="5-2-nbsp-UDP协议"><a href="#5-2-nbsp-UDP协议" class="headerlink" title="5.2&nbsp;UDP协议"></a>5.2&nbsp;UDP协议</h3><p>1.UDP的特点：1）UDP是无连接的，在传送数据之前不需要先建立连接。2）UDP是尽最大努力的交付，不是可靠交付。3）UDP是面向报文的，UDP在收到应用层的报文后，不拆分也不合并，UDP一次交付一个完整的报文。4）UDP没有拥塞控制。5）UDP支持一对一，一对多，多对一，多对多的交互通信。6）UDP的首部很短，只有8个字节。</p>
 <h3 id="5-3-nbsp-TCP协议"><a href="#5-3-nbsp-TCP协议" class="headerlink" title="5.3&nbsp;TCP协议"></a>5.3&nbsp;TCP协议</h3><p>1.TCP协议的特点：1）TCP是面向连接的。2）每一条TCP连接只能有两个端点，TCP连接只能是一对一的。3）TCP提供可靠交付。4）TCP提供全双工通信。5）TCP是面向字节流的。</p>
-<h3 id="5-9-nbsp-TCP的运输连接管理"><a href="#5-9-nbsp-TCP的运输连接管理" class="headerlink" title="5.9&nbsp;TCP的运输连接管理"></a>5.9&nbsp;TCP的运输连接管理</h3><p>1.运输连接有三个阶段：连接建立、数据传送、连接释放。<br>2.TCP连接的建立过程：三报文握手。<br> <div align="center"><img src="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png" class title="三报文握手示意图"></div><br>3.TCP连接的释放过程是四报文握手。<br> <div align="center"><img src="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/%E5%9B%9B%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png" class title="四报文握手示意图"></div></p>
+<h3 id="5-9-nbsp-TCP的运输连接管理"><a href="#5-9-nbsp-TCP的运输连接管理" class="headerlink" title="5.9&nbsp;TCP的运输连接管理"></a>5.9&nbsp;TCP的运输连接管理</h3><p>1.运输连接有三个阶段：连接建立、数据传送、连接释放。<br>2.TCP连接的建立过程：三报文握手。<br> <div style="width:50%;margin:0 auto"><img src="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png" class title="三报文握手示意图"></div><br>3.TCP连接的释放过程是四报文握手。<br> <div style="width:50%;margin:0 auto"><img src="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/%E5%9B%9B%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B.png" class title="四报文握手示意图"></div></p>
+<hr>
+<p><font color="blueviolet">感谢阅读 (ฅ´ω`ฅ)</font><br> <font color="blueviolet">ε=ε=ε=ε=ε=ε=┌(;￣◇￣)┘</font></p>
 
       
 
