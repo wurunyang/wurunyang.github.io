@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>计算机网络学习笔记（一） | 吴润洋的个人博客</title>
+  <title>JS学习笔记基础部分一 | 吴润洋的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章&amp;nbsp;&amp;nbsp;计算机网络概述1.互联网（Internet）是由数量极大的各种类型的计算机网络连接起来形成的网络。2.互联网的两个重要特点：连通性和共享。3.概念辨析&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.互联网：特指Internet，又叫因特网，是世界上最大、开放的、由众多网络连接而成的特定的计算机网络，采用TCP&#x2F;IP协议族作为通信的规则。&amp;nbsp;">
-<meta name="keywords" content="计算机网络">
+  <meta name="description" content="1.Javascript的组成：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ECMAScript：通过ECMA-262标准化的脚本程序设计语言。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;BOM：提供与浏览器交互的接口与方法。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;DOM：提供访问和操作网页内容的接口与方法，即HTML5文档。2.script标签写在head标签里边。">
+<meta name="keywords" content="JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机网络学习笔记（一）">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;17&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)&#x2F;index.html">
+<meta property="og:title" content="JS学习笔记基础部分一">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;27&#x2F;JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%B8%80&#x2F;index.html">
 <meta property="og:site_name" content="吴润洋的个人博客">
-<meta property="og:description" content="第一章&amp;nbsp;&amp;nbsp;计算机网络概述1.互联网（Internet）是由数量极大的各种类型的计算机网络连接起来形成的网络。2.互联网的两个重要特点：连通性和共享。3.概念辨析&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.互联网：特指Internet，又叫因特网，是世界上最大、开放的、由众多网络连接而成的特定的计算机网络，采用TCP&#x2F;IP协议族作为通信的规则。&amp;nbsp;">
+<meta property="og:description" content="1.Javascript的组成：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ECMAScript：通过ECMA-262标准化的脚本程序设计语言。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;BOM：提供与浏览器交互的接口与方法。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;DOM：提供访问和操作网页内容的接口与方法，即HTML5文档。2.script标签写在head标签里边。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-17T11:47:12.408Z">
+<meta property="og:updated_time" content="2019-11-28T10:44:19.795Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="吴润洋的个人博客" type="application/atom+xml">
@@ -145,31 +145,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-计算机网络学习笔记(一)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JS学习笔记基础部分一" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      计算机网络学习笔记（一）
+      JS学习笔记基础部分一
     </h1>
   
 
         
-        <a href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/" class="archive-article-date">
-  	<time datetime="2019-11-17T04:29:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
+        <a href="/2019/11/27/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2019-11-27T08:03:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <br>
-
-<h2 id="第一章-nbsp-nbsp-计算机网络概述"><a href="#第一章-nbsp-nbsp-计算机网络概述" class="headerlink" title="第一章&nbsp;&nbsp;计算机网络概述"></a>第一章&nbsp;&nbsp;计算机网络概述<br></h2><p>1.互联网（Internet）是由数量极大的各种类型的计算机网络连接起来形成的网络。<br>2.互联网的两个重要特点：连通性和共享。<br>3.概念辨析<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.<font color="#0088FF">互联网</font>：特指Internet，又叫因特网，是世界上最大、开放的、由众多网络连接而成的特定的计算机网络，采用TCP/IP协议族作为通信的规则。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.计算机网络：由若干<font color="#0088FF">结点（node）</font>和连接这些结点的<font color="#0088FF">链路（link）</font>组成<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.互连网：internet是一个通用名词，泛指由多个计算机网络互联而成的网络。网络的网络。<br>4.互联网的组成：<font color="#0088FF">边缘部分</font>和<font color="#0088FF">核心部分</font>。边缘部分是指所有连接在互联网上的主机，也被称为端系统；<a id="more"></a>核心部分指大量网络和连接这些网络的路由器。<br>5.计算机之间的通信，是计算机中<font color="#0088FF">进程</font>之间的通信。端系统之间的通信方式：<font color="#0088FF">客户服务器方式（C/S）</font>和<font color="#0088FF">对等方式（P2P）</font>。<br>6.网络核心部分要向网络边缘部分的大量主机提供连通性，在网络核心部分起特殊作用的是<font color="#0088FF">路由器</font>。<br>7.路由器是实现<font color="#0088FF">分组交换</font>的关键部件，路由器的任务是<font color="#0088FF">转发</font>收到的分组，这是网络核心部分最重要的功能。<br>8.路由器的工作过程：将收到的分组存入缓存；查找转发表，找出到某个目的地址应从哪个端口转发；将分组交给对应的端口转发出去。<br>9.电路交换的特点：电路交换必定是<font color="#0088FF">面向连接</font>的；电路交换分为三个阶段：<font color="#0088FF">建立连接</font>，<font color="#0088FF">通信</font>，<font color="#0088FF">释放连接</font><br>10.分组交换的特点：分组交换采用<font color="#0088FF">存储转发</font>技术，将较长的报文分成数据段，并添加首部构成<font color="#0088FF">分组</font>，每一个分组的首部都含有<font color="#0088FF">地址</font>等控制信息。<br>11.分组交换的优点：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.<font color="#0088FF">高效</font>：动态分配传输带宽，对通信链路是逐段占用。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.<font color="#0088FF">灵活</font>：为每一个分组独立地选择最适合的转发路由。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.<font color="#0088FF">快速</font>：不需要建立连接就可以向其他主机发送分组。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.<font color="#0088FF">可靠</font>：保证可靠性的网络协议和分布式多路由分组转发网络，保证了网络的生存性。<br>12.分组交换带来的问题：分组在各个结点存储转发时需要<font color="#0088FF">排队</font>，这会带来一定的<font color="#0088FF">时延</font>；分组必须携带的首部会带来额外的开销。<br>13.电路交换、报文交换和分组交换的比较<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.在连续传送大量数据时，如果连接建立的时间远远小于数据传送的时间，电路交换的传输速率较快。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.报文交换和分组交换不需要预先分配传输带宽，在传送突发数据时可提高整个网络的信道利用率。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.分组的长度远远小于报文的长度，分组交换更灵活，传输时延更低。<br>14.计算机网络的分类<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.根据网络的作用范围分：广域网WAN，城域网MAN；<font color="#0088FF">局域网LAN（1公里以内）</font>，个人区域网PAN。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.根据网络的使用者分：公用网，专用网。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.接入网AN：用于将用户接入互联网，起到一个桥梁的作用，由端系统到边缘路由器之间的物理链路组成。既不是核心部分，也不是边缘部分，大部分属于局域网。<br>15.计算机网络常用的性能指标：速率、带宽、吞吐量、时延、时延带宽积、往返时间RTT和利用率。<br>16.网络协议，简称协议，是为了进行网络上的数据交换而建立的规则。计算机网络体系结构是计算机网络各层及其协议的集合。<br>17.OSI七层模型：应用层、表示层、会话层、运输层、网络层、数据链路层、物理层，OSI参考模型概念清楚、理论完整，但是过于复杂而且不实用。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TCP/IP的体系结构：应用层、运输层、网际层、网络接口层（没有具体的定义）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;五层协议的体系结构：应用层、运输层、网络层、数据链路层、物理层。运输层中的重要协议是TCP和UDP协议，网络层的重要协议是IP。</p>
-<hr>
-<p><font color="blueviolet">感谢阅读 (ฅ´ω`ฅ)</font><br> <font color="blueviolet">ε=ε=ε=ε=ε=ε=┌(;￣◇￣)┘</font></p>
+        <p>1.Javascript的组成：<br>&nbsp;&nbsp;&nbsp;&nbsp;ECMAScript：通过ECMA-262标准化的脚本程序设计语言。<br>&nbsp;&nbsp;&nbsp;&nbsp;BOM：提供与浏览器交互的接口与方法。<br>&nbsp;&nbsp;&nbsp;&nbsp;DOM：提供访问和操作网页内容的接口与方法，即HTML5文档。<br>2.script标签写在<font color="#0088ff">head</font>标签里边。<a id="more"></a><br>3.JS的数据类型分为两种：<br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0088ff">基本数据类型</font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1]数字number<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2]字符串string<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3]布尔值boolean&nbsp;&nbsp;&nbsp;&nbsp;true/false<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4]特殊数据类型&nbsp;&nbsp;&nbsp;&nbsp;null空，undefined未定义<br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0088ff">复合数据类型</font><br>4.使用变量之前，要用var关键字声明变量。<br>5.使用typeof+变量名可以返回变量的类型，如typeof age<br>6.JS是弱语言，变量被赋值成什么类型就是什么类型。<br>7.NaN:not a number<br>8.使用Boolean()将其它类型的数据强制转换为布尔类型，非零数字转换成true，0转换成false；空字符串””转换为false，其他字符串转换成true。<br>9.Number():强制转换为数字。parseInt()兼容number()的功能并取整。parseFloat()取小数。<br>10.三目运算符/条件运算符<br>【格式】表达式1?表达式2:表达式3<br>【执行过程】首先判断表达式1，如果表达式为真则执行表达式2，否则执行表达式3。<br>11.函数的声明<br>【格式】function 函数名(形参…){函数体}<br>12.arguments的使用<br>【用途】用在参数个数不确定的函数中<br>【介绍】arguments是一个内置的数组，用来存储传递到函数中的参数。<br>13.事件驱动函数：在和页面交互的过程中调用的函数。和页面交互的行为称为事件。</p>
 
       
 
@@ -204,7 +200,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">计算机网络</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">JS</a>
         		</li>
       		
 		</ul>
@@ -260,7 +256,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/27/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%B8%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -274,18 +270,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          计算机网络学习笔记（二）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">计算机网络学习笔记（五）</div>
       <i class="icon-circle-right"></i>
     </a>
   
