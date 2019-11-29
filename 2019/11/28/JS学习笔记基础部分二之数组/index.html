@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>吴润洋的个人博客</title>
+  <title>JS学习笔记基础部分二之数组 | 吴润洋的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="吴润洋的个人博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="JS中数组的相关知识点总结1.数组的声明,三种不同的声明方式。 123var arr = new Array(1, true, &quot;hello&quot;)var arr = Array(1, true, &quot;hello&quot;)var arr = [1, true, &quot;hello&quot;] 2.数组的长度使用array.length可以返回数组的长度，不是只读，可以通过它修改数组的长度。">
+<meta name="keywords" content="JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS学习笔记基础部分二之数组">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;28&#x2F;JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%BA%8C%E4%B9%8B%E6%95%B0%E7%BB%84&#x2F;index.html">
 <meta property="og:site_name" content="吴润洋的个人博客">
+<meta property="og:description" content="JS中数组的相关知识点总结1.数组的声明,三种不同的声明方式。 123var arr = new Array(1, true, &quot;hello&quot;)var arr = Array(1, true, &quot;hello&quot;)var arr = [1, true, &quot;hello&quot;] 2.数组的长度使用array.length可以返回数组的长度，不是只读，可以通过它修改数组的长度。">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-29T14:23:19.791Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="吴润洋的个人博客" type="application/atom+xml">
@@ -141,16 +145,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-JS学习笔记基础部分二之数组" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-JS学习笔记基础部分二之数组" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/28/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%BA%8C%E4%B9%8B%E6%95%B0%E7%BB%84/">JS学习笔记基础部分二之数组</a>
+    <h1 class="article-title" itemprop="name">
+      JS学习笔记基础部分二之数组
     </h1>
   
 
@@ -165,12 +167,33 @@
       
         <h2 id="JS中数组的相关知识点总结"><a href="#JS中数组的相关知识点总结" class="headerlink" title="JS中数组的相关知识点总结"></a>JS中数组的相关知识点总结</h2><p>1.数组的声明,三种不同的声明方式。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span>, <span class="literal">true</span>, <span class="string">"hello"</span>)</span><br><span class="line"><span class="keyword">var</span> arr = <span class="built_in">Array</span>(<span class="number">1</span>, <span class="literal">true</span>, <span class="string">"hello"</span>)</span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="literal">true</span>, <span class="string">"hello"</span>]</span><br></pre></td></tr></table></figure>
-<p>2.数组的长度<br>使用array.length可以返回数组的长度，不是只读，可以通过它修改数组的长度。</p>
-        
-          <a class="article-more-a" href="/2019/11/28/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%BA%8C%E4%B9%8B%E6%95%B0%E7%BB%84/#more">more >></a>
-        
+<p>2.数组的长度<br>使用array.length可以返回数组的长度，不是只读，可以通过它修改数组的长度。<a id="more"></a><br>3.数组的遍历<br>a.可以通过for循环进行数组的遍历。<br>b.可以通过for in进行数组的遍历，执行的效率更高。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> arr)&#123;</span><br><span class="line">	docunment.write(arr[i] + <span class="string">"&lt;br/&gt;"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>4.栈方法介绍。栈结构：从一个口进，从同一个口出。特点是先进后出。<br>【push方法】【格式】数组.push(元素…)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】给数组末尾添加元素。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【参数】要添加的元素，个数没有限制。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【返回值】添加完元素后数组的长度。<br>【pop方法】【格式】数组.pop()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】移除数组末尾最后一个元素，没有参数。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【返回值】移除的参数。<br>5.队列方法介绍。队列结构：从一头进，从另一头出。特点：先进先出。<br>【push方法】同上。<br>【shift方法】【格式】数组.shift()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】从数组的头部取下一个元素。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【返回值】取下的元素。<br>【unshift方法】【格式】数组.unshift(参数…)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】从数组的头部插上元素。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【参数】插入数组的元素，元素个数随意。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【返回值】插入元素之后数组的长度。<br>6.数组的其他方法。<br>【concat方法】【格式】数组1.concat(数组2)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】将两个数组合并成一个新数组，原数组不会改变。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【返回值】合并好的新数组。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【参数】要合并的数组。<br>【slice方法】【格式】数组.slice(start,end)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】基于当前数组获取指定区域的元素并生成一个新数组。原数组不改变。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【参数】start是开始区域的下标，end是结束区域的下标，不包括end下标的元素。<br>【splice方法】可以完成删除、插入、替换等操作。具体功能由参数决定。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【格式】数组.splice(start, length, 元素…)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【参数】start:截取的开始下标；length:截取的长度；最后一个参数是在截取的开始下标位置我们要插入的元素。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【返回值】截取出来元素组成的数组。<br>【join方法】【格式】数组.join(拼接符)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】使用拼接符将数组拼接成字符串。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【返回值】拼接好的字符串。<br>【reverse方法】【格式】数组.reverse()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】对数组进行反向。<br>【sort方法】【格式】数组.sort()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【功能】使用默认的排序方法对数组中的元素进行升序排序，从小到大。</p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -190,16 +213,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/28/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%BA%8C%E4%B9%8B%E6%95%B0%E7%BB%84/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/28/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%BA%8C%E4%B9%8B%E6%95%B0%E7%BB%84/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/27/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%B8%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS学习笔记基础部分一</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -219,543 +301,14 @@
 
 
 
-
   
-    <article id="post-JS学习笔记基础部分一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/27/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%B8%80/">JS学习笔记基础部分一</a>
-    </h1>
   
 
-        
-        <a href="/2019/11/27/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2019-11-27T08:03:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.Javascript的组成：<br>&nbsp;&nbsp;&nbsp;&nbsp;ECMAScript：通过ECMA-262标准化的脚本程序设计语言。<br>&nbsp;&nbsp;&nbsp;&nbsp;BOM：提供与浏览器交互的接口与方法。<br>&nbsp;&nbsp;&nbsp;&nbsp;DOM：提供访问和操作网页内容的接口与方法，即HTML5文档。<br>2.script标签写在<font color="#0088ff">head</font>标签里边。</p>
-        
-          <a class="article-more-a" href="/2019/11/27/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%B8%80/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">JS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/27/JS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E4%B8%80/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-计算机网络学习笔记（五）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89/">计算机网络学习笔记（五）</a>
-    </h1>
   
 
-        
-        <a href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2019-11-20T07:36:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <br>
-
-<h2 id="第六章-nbsp-nbsp-应用层"><a href="#第六章-nbsp-nbsp-应用层" class="headerlink" title="第六章&nbsp;&nbsp;应用层"></a>第六章&nbsp;&nbsp;应用层</h2><p>应用层规定了应用进程在通信时所遵循的协议。应用层的协议都是基于客户服务器方式的。</p>
-<h3 id="6-1-nbsp-域名系统DNS"><a href="#6-1-nbsp-域名系统DNS" class="headerlink" title="6.1&nbsp;域名系统DNS"></a>6.1&nbsp;域名系统DNS</h3><p>1.域名系统DNS是互联网使用的命名系统，用来把便于人们使用的机器名字转换为IP地址。DNS是一个联机分布式数据库系统，采用客户服务器方式。<br>2.互联网采用层次树状结构的命名方法，任何一台连接在互联网上的主机和路由器都有唯一的层次结构的名字，即域名。域名中的点和IP地址中的点没有关系。<br>3.域名服务器有四种类型：根域名服务器、顶级域名服务器、权限域名服务器和本地域名服务器。<br>4.域名的解析过程：主机向本地域名服务器的查询过程是递归查询；本地域名服务器向根域名服务器的查询过程是迭代查询。</p>
-        
-          <a class="article-more-a" href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">计算机网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-计算机网络学习笔记（四）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/">计算机网络学习笔记（四）</a>
-    </h1>
   
 
-        
-        <a href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2019-11-20T04:32:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <br>
-
-<h2 id="第五章-nbsp-nbsp-运输层"><a href="#第五章-nbsp-nbsp-运输层" class="headerlink" title="第五章&nbsp;&nbsp;运输层"></a>第五章&nbsp;&nbsp;运输层</h2><h3 id="5-1-nbsp-运输层概述"><a href="#5-1-nbsp-运输层概述" class="headerlink" title="5.1&nbsp;运输层概述"></a>5.1&nbsp;运输层概述</h3><p>1.运输层提供应用进程间的<font color="#0088FF">逻辑通信</font>。在运输层看来，通信的端点是应用进程。运输层的一个重要功能是分用和复用。运输层有两个重要的协议：<font color="#0088FF">面向连接的TCP</font>和<font color="#0088FF">无连接的UDP</font>。运输层向高层用户屏蔽了下面网络的细节，使高层用户看起来就好像在两个运输层实体之间存在一条端到端的逻辑通信信道。<br>2.网络层提供主机之间的逻辑通信；运输层提供应用进程之间的逻辑通信。<br>3.用户数据报协议UDP和传输控制协议TCP：UDP是一种无连接的协议，提供无连接的服务，在发传送数据前不需要建立连接，传送的数据单位协议是UDP报文或用户数据报；对方的运输层收到用户数据报后不需要给出任何确认，尽管UDP协议不提供可靠传输，在某些情况下UDP是最有效的工作方式。TCP是面向连接的协议，提供面向连接的服务，传送的数据单位协议是TCP报文段，TCP不提供广播和多播，因为TCP提供面向连接的、可靠的运输协议，不可避免地增加了开销。</p>
-        
-          <a class="article-more-a" href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">计算机网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-计算机网络学习笔记（三）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/">计算机网络学习笔记（三）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2019-11-18T11:10:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <br>
-
-<h2 id="第四章-nbsp-nbsp-网络层"><a href="#第四章-nbsp-nbsp-网络层" class="headerlink" title="第四章&nbsp;&nbsp;网络层"></a>第四章&nbsp;&nbsp;网络层<br></h2><p>1.网络层向上层只提供简单灵活的、<font color="#0088FF">无连接的、</font><font color="#0088FF">尽最大努力交付的</font>数据报业务。网络层不提供服务质量的保证，发送的分组可能出错、重复、丢失、失序，当然也不保证分组传送的时限。主机中的<font color="#0088FF">运输层</font>负责可靠交付。<br>2.这种方式的优点：网络造价大大降低，运行方式灵活，适应各种应用。<br>3.网络互连都是指通过路由器进行网络互连和路由选择。<br>4.使用IP协议的虚拟互连网络简称IP网，使用IP协议可以使这些性能各异的网络在用户看来就像是一个统一的网络。当互联网上的主机通信时，就好像在一个网络上通信一样，而看不到互连网络的异构细节。<br>5.互联网上的交付有两种：在本网络的直接交付和到其他网络的间接交付。<br>6.IP地址（32位）的编址方法：分类的IP地址（最基本的方法）、划分子网（改进）、构成超网（无分类编址方法）。</p>
-        
-          <a class="article-more-a" href="/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">计算机网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-计算机网络学习笔记（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">计算机网络学习笔记（二）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2019-11-17T11:53:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <br>
-
-<h2 id="第三章-nbsp-nbsp-数据链路层"><a href="#第三章-nbsp-nbsp-数据链路层" class="headerlink" title="第三章&nbsp;&nbsp;数据链路层"></a>第三章&nbsp;&nbsp;数据链路层<br></h2><p>1.数据链路层使用的信道分为<font color="#0088FF">点对点</font>信道和<font color="#0088FF">广播信道</font>两种类型。<br>2.链路（Link）是一条无源的点到点物理线路段，中间没有任何其他的交换结点。<font color="#0088FF">数据链路（data link）</font>除了物理线路外，还必须有通信协议来控制这些数据的传输。若把实现这些协议的硬件和软件加到链路上，就构成了数据链路。一般使用<font color="#0088FF">适配器（网卡）</font>来实现协议的硬件和软件。<br>3.数据链路层传送的协议数据单元是<font color="#0088FF">帧</font>，数据链路层的三个基本问题是：<font color="#0088FF">封装成帧，</font><font color="#0088FF">透明传输，</font><font color="#0088FF">差错控制</font>。<br>4.封装成帧：在IP数据报前后增加首部和尾部，构成帧。使用帧定界符进行帧定界，使用控制字符SOH表示帧头部的开始，使用控制字符EOT表示帧的结束。<br>5.透明传输：使用字节填充或者字符填充解决透明传输的问题，如果数据中出现控制字符SOH、EOT或者ESC，就在它们前面加上转义字符ESC，接收端的数据链路层在将数据发给网络层之前删除插入的转义字符。</p>
-        
-          <a class="article-more-a" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">计算机网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-计算机网络学习笔记(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/">计算机网络学习笔记（一）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/" class="archive-article-date">
-  	<time datetime="2019-11-17T04:29:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <br>
-
-<h2 id="第一章-nbsp-nbsp-计算机网络概述"><a href="#第一章-nbsp-nbsp-计算机网络概述" class="headerlink" title="第一章&nbsp;&nbsp;计算机网络概述"></a>第一章&nbsp;&nbsp;计算机网络概述<br></h2><p>1.互联网（Internet）是由数量极大的各种类型的计算机网络连接起来形成的网络。<br>2.互联网的两个重要特点：连通性和共享。<br>3.概念辨析<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.<font color="#0088FF">互联网</font>：特指Internet，又叫因特网，是世界上最大、开放的、由众多网络连接而成的特定的计算机网络，采用TCP/IP协议族作为通信的规则。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.计算机网络：由若干<font color="#0088FF">结点（node）</font>和连接这些结点的<font color="#0088FF">链路（link）</font>组成<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.互连网：internet是一个通用名词，泛指由多个计算机网络互联而成的网络。网络的网络。<br>4.互联网的组成：<font color="#0088FF">边缘部分</font>和<font color="#0088FF">核心部分</font>。边缘部分是指所有连接在互联网上的主机，也被称为端系统；</p>
-        
-          <a class="article-more-a" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">计算机网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/16/hello-world/" class="archive-article-date">
-  	<time datetime="2019-11-16T04:43:03.762Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-        
-          <a class="article-more-a" href="/2019/11/16/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/16/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -778,8 +331,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
